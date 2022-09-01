@@ -73,7 +73,7 @@ function setup() {
         packageJson.version = version;
     }
 
-    fs.writeFileSync('./package.json', packageJson, { encoding: 'utf-8' });
+    fs.writeFileSync('./package.json', JSON.stringify(packageJson), { encoding: 'utf-8' });
 }
 
 function build() {
