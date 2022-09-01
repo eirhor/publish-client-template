@@ -1,0 +1,41 @@
+{
+    "name": "@geta/client-{0}",
+    "version": "0.0.1-alpha.1",
+    "main": "dist/index.js",
+    "module": "dist/index.esm.js",
+    "types": "dist/index.d.ts",
+    "sideEffects": false,
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Geta/{0}.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Geta/{0}/issues"
+    },
+    "homepage": "https://github.com/Geta/{0}#readme",
+    "author": "Eirik Horvath <eirik@geta.no>",
+    "license": "Apache-2.0",
+    "private": false,
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "rollup -c"
+    },
+    "gitHead": "2ab49cb68cb2b2424dc6667c1806a6db66e7a469",
+    "dependencies": {
+        "@rollup/plugin-commonjs": "^22.0.2",
+        "@rollup/plugin-node-resolve": "^13.3.0",
+        "rollup": "^2.79.0",
+        "rollup-plugin-delete": "^2.0.0",
+        "rollup-plugin-peer-deps-external": "^2.2.4",
+        "rollup-plugin-typescript2": "^0.33.0",
+        "rollup-plugin-uglify": "^6.0.4",
+        "typescript": "^4.8.2"
+    },
+    "devDependencies": {
+        "@trivago/prettier-plugin-sort-imports": "^3.3.0",
+        "geta-prettier-config": "^1.0.0",
+        "prettier": "^2.7.1"
+    }
+}
