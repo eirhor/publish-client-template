@@ -22,7 +22,6 @@
     "scripts": {
         "build": "rollup -c"
     },
-    "gitHead": "2ab49cb68cb2b2424dc6667c1806a6db66e7a469",
     "dependencies": {
         "@rollup/plugin-commonjs": "^22.0.2",
         "@rollup/plugin-node-resolve": "^13.3.0",
