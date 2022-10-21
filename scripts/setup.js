@@ -1,6 +1,6 @@
-import fs from 'fs';
+const fs = require('fs');
 
-import { getArgs, getPackageJson } from './_shared';
+const { getArgs, getPackageJson } = require('./_shared');
 
 function setup() {
     const { serviceName, buildNumber, repositoryName, environment, version } = getArgs();

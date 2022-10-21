@@ -1,5 +1,5 @@
-import fs from 'fs';
-import { argv } from 'process';
+const fs = require('fs');
+const { argv } = require('process');
 
 export function getArgs() {
     let repositoryName;
