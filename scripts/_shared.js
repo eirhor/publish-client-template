@@ -1,7 +1,7 @@
 const fs = require('fs');
 const { argv } = require('process');
 
-export function getArgs() {
+function getArgs() {
     let repositoryName;
     let serviceName;
     let version;
@@ -51,7 +51,12 @@ export function getArgs() {
     };
 }
 
-export function getPackageJson() {
+function getPackageJson() {
     const packageJsonString = fs.readFileSync('./package.json', { encoding: 'utf-8' });
     return JSON.parse(packageJsonString);
 }
+
+module.exports = {
+    getPackageJson,
+    getArgs,
+};
