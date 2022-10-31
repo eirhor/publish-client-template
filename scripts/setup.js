@@ -14,8 +14,6 @@ function setup() {
 
     if (environment.toLowerCase() === 'test') {
         packageJson.version = `${version}-alpha.${buildNumber}`;
-    } else if (environment.toLowerCase() === 'staging') {
-        packageJson.version = `${version}-rc.${buildNumber}`;
     } else {
         packageJson.version = version;
     }
