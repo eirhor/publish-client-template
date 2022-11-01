@@ -15,7 +15,7 @@ function setup() {
     if (environment.toLowerCase() === 'test') {
         packageJson.version = `${version}-alpha.${buildNumber}`;
     } else {
-        packageJson.version = version;
+        packageJson.version = `${version}-${buildNumber}`;
     }
 
     fs.writeFileSync('./package.json', JSON.stringify(packageJson), { encoding: 'utf-8' });
